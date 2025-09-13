@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Video Stream Detector</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <h1>Detected Streams</h1>
+      <button id="clear-button" class="hidden" title="Clear this list">Clear</button>
+    </div>
+    <div id="streams-list">
+      <p id="placeholder">No video streams detected on this page.</p>
+    </div>
+    <div id="deep-scan-section" class="hidden">
+      <hr>
+      <div class="header">
+        <h2>Targeted Scan</h2>
+      </div>
+      <p class="scan-description">Use a targeted scanner for complex sites. Results will be added to the list above.</p>
+      <div id="scan-button-container"></div>
+    </div>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
